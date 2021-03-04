@@ -27,7 +27,7 @@ appRouter.get('/friendSearch/:search', friendSearch, (req, res) => {
   return res.status(200).json(res.locals.search);
 });
 
-appRouter.get('/content', getContentList, (req, res) => {
+appRouter.post('/content', getContentList, (req, res) => {
   return res.status(200).json(res.locals.watchList);
 });
 // input: params, search = <media name>
