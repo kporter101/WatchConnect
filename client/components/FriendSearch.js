@@ -36,7 +36,6 @@ const FriendSearch = ({ friends, setFriends }) =>{
       .then((data) => {
         searchResults=[...data];
         renderSearchResults();
-         
       }).catch(() => ('Error searching user'))    
     
   }
